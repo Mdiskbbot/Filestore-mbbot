@@ -164,7 +164,7 @@ async def start(client, message):
                 media = getattr(msg, msg.media.value)
                 if BATCH_FILE_CAPTION:
                     try:
-                        f_caption=BATCH_FILE_CAPTION.format(file_name=getattr(media, 'file_name', ''), file_size=getattr(media, 'file_size', ''), file_caption=getattr(msg, 'caption', ''))
+                        f_caption=BATCH_FILE_CAPTION.format(file_name=getattr(media, 'file_name', ''), file_size=getattr(media, 'file_size', ''), file_caption=getattr(msg, 'caption', '@Mdisk_Blastt'))
                     except Exception as e:
                         logger.exception(e)
                         f_caption = getattr(msg, 'caption', '')
